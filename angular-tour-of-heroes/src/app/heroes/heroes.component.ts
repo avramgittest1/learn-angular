@@ -8,10 +8,7 @@ import {HEROES} from '../mock-heroes'
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit, OnDestroy {
-  hero:Hero = {
-    name :"Windstorm",
-    id : 0
-  };
+
 
   heroes : Hero[] = HEROES;
   selectedHero : Hero;
@@ -24,9 +21,7 @@ export class HeroesComponent implements OnInit, OnDestroy {
 
   }
 
-  onChange(event){
-    console.log(event.target.value)
-  }
+  
 
   onSelect(hero:Hero){
     this.selectedHero = hero;
