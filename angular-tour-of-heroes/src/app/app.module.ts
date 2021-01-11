@@ -9,6 +9,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { HeroOverallRatingComponent } from './hero-overall-rating/hero-overall-rating.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
+import { OverAllRatingService } from './over-all-rating.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { HeroesListComponent } from './heroes-list/heroes-list.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [OverAllRatingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

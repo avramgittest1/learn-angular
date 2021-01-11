@@ -5,5 +5,20 @@
     <button class="clear"
             (click)="messageService.clear()">clear</button>
     <div *ngFor='let message of messageService.messages'> {{message}} </div>
-  
+    
   </div>
+
+  
+
+  <div *ngIf="overAllR">
+        <h2>Provided over all rating</h2>
+        <div *ngFor='let item of overAllR'>{{item.name}} {{ item.overAllRating(item.powerStats)}}
+      </div>
+
+  </div>
+
+  
+  
+
+  
+  
