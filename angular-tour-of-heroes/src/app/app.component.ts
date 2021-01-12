@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { HeroService } from './hero.service'
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation : ViewEncapsulation.Emulated
 })
 export class AppComponent {
+
+  constructor(private heroService: HeroService) { }
   title = "Tour of Heroes"
+
+  logSelectedHeroes(){
+    this.heroService.getSelectedHero();
+  }
+
 }
